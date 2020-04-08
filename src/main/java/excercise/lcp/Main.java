@@ -45,9 +45,9 @@ public class Main {
         return leftLcp.substring(0, p);
     }
 
-    public static void main(String[] args) {
-        inputData();
-        outputResult();
-    }
+//    public static void main(String[] args) {
+//        inputData();
+//        outputResult();
+//    }
 
 }

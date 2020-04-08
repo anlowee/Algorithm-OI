@@ -146,9 +146,9 @@ public class Main {
         return current;
     }
 
-    public static void main(String[] args) {
-        inputVertexSet();
-        outputResult();
-    }
+//    public static void main(String[] args) {
+//        inputVertexSet();
+//        outputResult();
+//    }
 
 }
