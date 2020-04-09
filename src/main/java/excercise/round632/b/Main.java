@@ -58,8 +58,8 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
-        work();
-    }
+//    public static void main(String[] args) {
+//        work();
+//    }
 
 }
