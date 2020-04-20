@@ -45,8 +45,8 @@ public class Main {
         System.out.print(stringBuffer);
     }
 
-    public static void main(String[] args) {
-        work();
-    }
+//    public static void main(String[] args) {
+//        work();
+//    }
 
 }
