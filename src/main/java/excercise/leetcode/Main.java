@@ -1,33 +1,41 @@
 package excercise.leetcode;
 
-import org.junit.Test;
+import java.util.*;
 
-import java.io.BufferedInputStream;
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.Set;
+class MinStack {
+
+    private List<Integer> elements;
+
+    /** initialize your data structure here. */
+    public MinStack() {
+        elements = new ArrayList<Integer>();
+    }
+
+    public void push(int x) {
+        elements.add(x);
+    }
+
+    public void pop() {
+
+        elements.remove(elements.size() - 1);
+    }
+
+    public int top() {
+        return elements.get(elements.size() - 1);
+    }
+
+    public int getMin() {
+        int min = elements.get(0);
+        for (Integer i : elements)
+            min = Math.min(min, i);
+        return min;
+    }
+}
 
 public class Main {
 
-    private Scanner sc = new Scanner(new BufferedInputStream(System.in));
+    public static void main(String[] args) {
 
-    @Test
-    public boolean isHappy(int n) {
-        Set<Integer> squareSums = new HashSet<Integer>();
-        int squareSum = Integer.MIN_VALUE
-        while (true) {
-            squareSum = 0;
-            while (n > 0) {
-                squareSum += (n % 10) * (n % 10);
-                n /= 10;
-            }
-            n = squareSum;
-            if (squareSums.contains(squareSum))
-                break;
-            else
-                squareSums.add(squareSum);
-        }
-        return squareSum == 1;
     }
 
 }
