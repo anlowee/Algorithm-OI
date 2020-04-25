@@ -1,37 +1,19 @@
 package excercise.leetcode;
 
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 import java.util.*;
 
-class MinStack {
+class Solution {
 
-    private List<Integer> elements;
+    private int findLowest(int[] nums) {
 
-    /** initialize your data structure here. */
-    public MinStack() {
-        elements = new ArrayList<Integer>();
     }
 
-    public void push(int x) {
-        elements.add(x);
-    }
+    public int search(int[] nums, int target) {
 
-    public void pop() {
-
-        elements.remove(elements.size() - 1);
-    }
-
-    public int top() {
-        return elements.get(elements.size() - 1);
-    }
-
-    public int getMin() {
-        int min = elements.get(0);
-        for (Integer i : elements)
-            min = Math.min(min, i);
-        return min;
     }
 }
-
 public class Main {
 
     public static void main(String[] args) {
